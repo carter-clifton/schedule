@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#mainContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.load-card .btn {
+    width: auto;
+    align-self: start;
+}
+
+.btn-red {
+    background-color: rgb(255,100,100);
+    margin-bottom: 1vh;
+}
+
+.btn-red:hover {
+    background-color: rgb(255,150,150);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dualFrameContainer {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#editingContainer {
+    height: 100%;
+    width: 350px;
+    background-color: white;
+    border-right: solid black 1px;
+    overflow-y: auto;
+}
+
+#iframeContainer {
+    height: 100%;
+    width: calc(100% - 350px);
+}
+
+#iframeContainer iframe {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.valueContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.valueContainer label {
+    width: 40%;
+    margin: 0;
+}
+
+.valueContainer input {
+    width: 50%;
+}
+
+.valueContainer select {
+    width: 50%;
+    height: calc(1.5em + .75rem + calc(var(--bs-border-width) * 2));
+}
+
+.valueContainer option {
+    height: calc(1.5em + .75rem + calc(var(--bs-border-width) * 2));
+}
+
+.form-check-input {
+    height: calc(1.5em + .75rem + calc(var(--bs-border-width) * 2));
+}
+
+#resetButton {
+    margin: 0;
+}
+
+.modal-body img {
+    width: 100%;
+}
